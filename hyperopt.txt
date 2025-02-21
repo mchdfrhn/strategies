@@ -1,0 +1,7 @@
+freqtrade hyperopt
+--strategy ZaratustraV2
+--timerange 20240201-20240229
+--epoch 100
+--spaces buy sell roi stoploss trailing protection
+--hyperopt-loss SharpeHyperOptLoss
+--random-state 42

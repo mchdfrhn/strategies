@@ -1,0 +1,45 @@
+ZaratustraV2
+
+Best result:
+
+    90/100:    465 trades. 332/28/105 Wins/Draws/Losses. Avg profit   0.45%. Median profit   0.05%. Total profit 67.74146219 USDT (   6.77%). Avg duration 11:44:00 min. Objective: -56.72507
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "adx_threshold": 21, default=25
+        "rsi_threshold": 64, default=50
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "atr_multiplier": 4.097, default=2.5
+    }
+
+    # Protection hyperspace params:
+    protection_params = {
+        "cooldown_lookback": 3, default=5
+        "stop_duration": 224, default=72
+        "use_stop_protection": False, default=True
+    }
+
+    # ROI table:
+    minimal_roi = {
+        "0": 0.253,
+        "16": 0.075,
+        "70": 0.025,
+        "112": 0
+    }
+
+    # Stoploss:
+    stoploss = -0.349 default= 0.10
+
+    # Trailing stop:
+    trailing_stop = True
+    trailing_stop_positive = 0.2 default = 0.02
+    trailing_stop_positive_offset = 0.276 default = 0.04
+    trailing_only_offset_is_reached = False default = True
+    
+
+    # Max Open Trades:
+    max_open_trades = 50  # value loaded from strategy
